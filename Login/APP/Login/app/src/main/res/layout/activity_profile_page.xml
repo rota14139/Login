@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editText_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePage">
+
+    <TextView
+        android:id="@+id/textView_username"
+        android:layout_width="127dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF428BCA"
+        android:textIsSelectable="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="127dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="8dp"
+        android:text="UTENTE"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#FF428BCA"
+        android:textIsSelectable="true"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_errorMessage"
+        android:layout_width="248dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textColor="	#5cb85c"
+        app:layout_constraintBottom_toTopOf="@+id/button_deleteUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_newPassword" />
+
+    <TextView
+        android:id="@+id/textView_message"
+        android:layout_width="248dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="69dp"
+        android:textAlignment="center"
+        android:textColor="	#5cb85c"
+        app:layout_constraintBottom_toTopOf="@+id/editText_oldPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_username" />
+
+    <EditText
+        android:id="@+id/editText_newPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Nuova password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textView_errorMessage"
+        app:layout_constraintStart_toStartOf="@+id/editText_oldPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editText_oldPassword" />
+
+    <EditText
+        android:id="@+id/editText_oldPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:hint="Vecchia password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editText_newPassword"
+        app:layout_constraintStart_toStartOf="@+id/textView_errorMessage"
+        app:layout_constraintTop_toBottomOf="@+id/textView_message" />
+
+    <Button
+        android:id="@+id/button_changePassword"
+        android:layout_width="210dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="64dp"
+        android:background="#428BCA"
+        android:text="CAMBIA PASSWORD"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_esci"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_deleteUser" />
+
+    <Button
+        android:id="@+id/button_esci"
+        android:layout_width="210dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="113dp"
+        android:background="#428BCA"
+        android:text="ESCI"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_changePassword" />
+
+    <Button
+        android:id="@+id/button_deleteUser"
+        android:layout_width="210dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:background="#d9534f"
+        android:text="ELIMINA ACCOUNT"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_changePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_errorMessage" />
+
+</android.support.constraint.ConstraintLayout>
