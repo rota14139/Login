@@ -2,7 +2,7 @@ package com.example.login;
 public class GlobalVariable {
         //indirizzo del server
         //quando si utilizza un dispositivo emulato usare l'ip 10.0.2.2
-        private static final String ROOT_URL = "http://10.0.2.2/login/API/v1/API.php?apicall=";
+        private static final String ROOT_URL = "login14139.altervista.org/API/v1/API.php?apicall=";
 
         public static final String URL_LOGIN = ROOT_URL + "login";
         public static final String URL_SIGNUP = ROOT_URL + "signUp";
